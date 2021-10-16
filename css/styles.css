@@ -2,7 +2,7 @@ body {
   width: 1600px;
   font-family: Roboto, sans-serif;
 }
-
+/*footer*/
 footer {
   position: absolute;
   width: 1600px;
@@ -12,10 +12,7 @@ footer {
 
   background: #2f303a;
 }
-
-/*Menu header*/
-
-.logo {
+.logo-footer {
   position: absolute;
   width: 145px;
   height: 31px;
@@ -35,7 +32,66 @@ footer {
   margin-right: 94px;
 }
 
-.logo > span {
+.logo-footer > span {
+  color: white;
+}
+.footer-cointainer {
+  margin-left: 215px;
+}
+footer li {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  width: 231px;
+  height: 21px;
+}
+footer a:hover {
+  color: #2196f3;
+}
+.list-footer {
+  position: absolute;
+  width: 231px;
+  height: 21px;
+}
+address {
+  position: absolute;
+  width: 246px;
+  height: 21px;
+  top: 111px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+/*Menu header*/
+
+.logo-header {
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+  margin-right: 94px;
+}
+
+.logo-header > span {
   color: #212121;
 }
 
@@ -64,7 +120,7 @@ footer {
   color: #212121;
 }
 
-.navigation-link:hover {
+header a:hover {
   color: #2196f3;
 }
 
@@ -87,14 +143,12 @@ footer {
 .contact a {
   text-decoration: none;
   position: absolute;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
   color: #757575;
 }
 .menu {
