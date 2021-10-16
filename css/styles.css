@@ -1,5 +1,6 @@
 body {
   width: 1600px;
+  font-family: Roboto, sans-serif;
 }
 
 footer {
@@ -13,12 +14,8 @@ footer {
 }
 
 /*Menu header*/
-.menu {
-  background-color: #ffffff;
-}
 
 .logo {
-  display: inline;
   position: absolute;
   width: 145px;
   height: 31px;
@@ -73,6 +70,7 @@ footer {
 
 .contact {
   list-style: none;
+  display: inline;
   position: absolute;
   width: 135px;
   height: 16px;
@@ -85,9 +83,30 @@ footer {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
-  background: #2f303a;
 }
+.contact a {
+  text-decoration: none;
+  position: absolute;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+.menu {
+  position: absolute;
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+
+  background: #ffffff;
+}
+
 /*Header*/
 .header {
   position: absolute;
