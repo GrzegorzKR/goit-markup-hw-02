@@ -321,7 +321,6 @@ footer a {
   width: 1170px;
   height: 1360px;
   margin-top: 174px;
-  align: center;
   }
 /*Filter buttons*/
 .filters {
@@ -415,4 +414,5 @@ footer a {
   margin-left: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+}
 /*=========== END PORTFOLIO ===========*/
