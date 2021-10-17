@@ -1,85 +1,23 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --main-color: #2196F3;
+  --font-color: #212121;
+}
+
 body {
   width: 1600px;
-  font-family: Roboto, sans-serif;
+  font-family: var(--main-font);
+  color: var(--font-color);
 }
 
-/*Menu header*/
-
-.logo-header {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  text-decoration: none;
-
-  letter-spacing: 0.03em;
-
-  color: #2196f3;
-  margin-right: 94px;
+/*===========COMPONENTS===========*/
+button {
+   cursor: pointer;
 }
 
-.logo-header > span {
-  color: #212121;
-}
-
-.navigation {
-  position: absolute;
-  display: flex;
-  width: 254px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
-}
-
-.navigation > .navigation-item {
-  display: inline;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  list-style: none;
-}
-
-.navigation-link {
-  text-decoration: none;
-  margin-right: 46px;
-  color: #212121;
-}
-
-header a:hover {
-  color: #2196f3;
-}
-
-.contact {
-  list-style: none;
-  display: flex;
-  position: absolute;
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
-}
-.contact a {
-  text-decoration: none;
-  position: absolute;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-.menu {
+/*===========MENU===========*/
+ .menu {
   position: absolute;
   width: 1600px;
   height: 80px;
@@ -88,8 +26,81 @@ header a:hover {
 
   background: #ffffff;
 }
+.logo-header {
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
 
-/*Header*/
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  text-decoration: none;
+
+  letter-spacing: 0.03em;
+
+  color: var(--main-color);
+  margin-right: 94px;
+}
+.logo-header > span {
+  color: var(--font-color);
+}
+/**Navigation*/
+.navigation {
+  position: absolute;
+  display: flex;
+  width: 254px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+}
+.navigation-list {
+    display: flex;
+}
+.navigation-list-item,
+.contact-list {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.333;
+  list-style: none;
+}
+.navigation-link {
+  text-decoration: none;
+  margin-right: 46px;
+  color: var(--font-color);
+}
+
+.navigation-link:hover,
+.navigation-link:focus,
+.navigation-link:active,
+.contact-mail:hover,
+.contact-mail:focus,
+.contact-phone:hover,
+.contact-phone:focus {
+  color: var(--main-color);
+}
+
+.contact-list {
+  list-style: none;
+  position: absolute;
+  width: 135px;
+  height: 16px;
+  left: 1078px;
+  top: 32px;
+}
+.contact-list a {
+  text-decoration: none;
+  font-style: normal;
+  color: #757575;
+ }
+  /*=========== END MENU===========*/
+
+
+/* =========== MAIN PAGE HEADER===========*/
 .header {
   position: absolute;
   width: 1600px;
@@ -106,13 +117,11 @@ header a:hover {
   left: 452px;
   bottom: 280px;
 
-  font-family: Roboto;
-  font-style: normal;
+  font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
 
-  /* or 136% */
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -127,22 +136,23 @@ header a:hover {
   left: 700px;
   top: 350px;
 
-  background: #2196f3;
+  background: var(--main-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  font-family: Roboto;
-  font-style: normal;
+  font-family: var(--main-font);
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
 
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 
   color: #ffffff;
 }
+/* =========== END MAIN PAGE HEADER===========*/
+
+/* =========== MAIN SECTION MAIN PAGE===========*/
 /*our strengths*/
 .list-strengths {
   position: absolute;
@@ -156,19 +166,17 @@ header a:hover {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.333;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;
-
-  color: #212121;
 }
 .list-strengths td {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
   letter-spacing: 0.03em;
 
   color: #757575;
@@ -179,19 +187,17 @@ header a:hover {
   width: 1170px;
   height: 386px;
   left: 215px;
-  top: 969px;
+  top: 889px;
 }
-.offer h2 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+h2 {
+font-family: var(--main-font);
+font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: #212121;
-}
+  margin-top: 94px;
+ }
 .offer-list {
   display: flex;
 }
@@ -211,17 +217,6 @@ header a:hover {
 
   background: #f5f4fa;
 }
-.team h2 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: 94px;
-  color: #212121;
-}
 .team-list {
   display: flex;
   list-style: none;
@@ -237,24 +232,20 @@ header a:hover {
   border-radius: 0px 0px 4px 4px;
 }
 .team-list-item span {
-  font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--font-color);
 }
 .team-list-item figcaption {
   text-align: center;
   color: #757575;
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
 }
 
-/*footer*/
 /*footer*/
 footer {
   position: absolute;
@@ -265,6 +256,13 @@ footer {
 
   background: #2f303a;
 }
+footer li {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  }
 .logo-footer {
   position: absolute;
   width: 145px;
@@ -273,65 +271,59 @@ footer {
   top: 60px;
 
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.192;
   text-decoration: none;
 
   letter-spacing: 0.03em;
 
-  color: #2196f3;
+  color: var(--main-color);
   margin-right: 94px;
 }
-
 .logo-footer > span {
   color: white;
 }
 .footer-cointainer {
   margin-left: 215px;
 }
-footer li {
-  list-style: none;
+
+.contact-footer-mail:hover,
+.contact-footer-mail:focus,
+.contact-footer-phone:hover,
+.contact-footer-phone:focus {
+  color: var(--main-color);
 }
-footer a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-  width: 231px;
-  height: 21px;
-}
-footer a:hover {
-  color: #2196f3;
-}
-.list-footer {
+.contact-footer {
   position: absolute;
   width: 231px;
   height: 21px;
   left: 215px;
   top: 141px;
-}
-address {
+  }
+
+.adres-footer {
   position: absolute;
   width: 246px;
   height: 21px;
   top: 111px;
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 
-/*Portfolio*/
+/*=========== PORTFOLIO ===========*/
+
 .section-portfolio {
   width: 1170px;
   height: 1360px;
   margin-top: 174px;
   align: center;
   }
-
+/*Filter buttons*/
 .filters {
   margin-top: 174px;
 }
@@ -339,21 +331,7 @@ address {
   display: flex;
   list-style: none;
 }
-.filters-buttons button {
-  background: #f5f4fa;
-  border-radius: 4px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
 
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-  margin-top: 94px;
-}
 .filters-button-all {
   position: absolute;
   width: 121px;
@@ -384,28 +362,32 @@ address {
   height: 38px;
   left: 961px;
 }
-.filters-buttons button:hover {
-  background: #2196f3;
+.filters-buttons button:hover,
+.filters-buttons button:focus,
+.filters-buttons button {
+ font-family: var(--main-font);
+ border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.filters-buttons button {
+  background: #f5f4fa;
+  margin-top: 94px;
+}
+.filters-buttons button:hover,
+.filters-buttons button:focus {
+  background: var(--main-color);
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
+   
   color: #ffffff;
-
-  cursor: pointer;
-}
+ }
 /*Projects*/
-
 .projects-list {
   display: flex;
   list-style: none;
@@ -413,30 +395,24 @@ address {
   margin-top: 182px;
 }
 .projects-list span {
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 36px;
-
-letter-spacing: 0.06em;
-
-color: #212121;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--font-color);
 }
 .projects-list-item {
-background: #FFFFFF;
-border: 1px solid #EEEEEE;
-box-sizing: border-box;
-margin-right: 30px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  margin-right: 30px;
 }
 .projects-list-item figcaption {
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 30px;
-margin-left: 24px;
-
-letter-spacing: 0.03em;
-
-color: #757575;
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 30px;
+  margin-left: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+/*=========== END PORTFOLIO ===========*/
