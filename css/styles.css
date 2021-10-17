@@ -325,6 +325,13 @@ address {
 }
 
 /*Portfolio*/
+.section-portfolio {
+  width: 1170px;
+  height: 1360px;
+  margin-top: 174px;
+  align: center;
+  }
+
 .filters {
   margin-top: 174px;
 }
@@ -345,7 +352,7 @@ address {
   letter-spacing: 0.03em;
 
   color: #212121;
-  top: 174px;
+  margin-top: 94px;
 }
 .filters-button-all {
   position: absolute;
@@ -397,3 +404,39 @@ address {
 
   cursor: pointer;
 }
+/*Projects*/
+
+.projects-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-top: 182px;
+}
+.projects-list span {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 36px;
+
+letter-spacing: 0.06em;
+
+color: #212121;
+}
+.projects-list-item {
+background: #FFFFFF;
+border: 1px solid #EEEEEE;
+box-sizing: border-box;
+margin-right: 30px;
+}
+.projects-list-item figcaption {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 30px;
+margin-left: 24px;
+
+letter-spacing: 0.03em;
+
+color: #757575;
